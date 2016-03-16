@@ -7,6 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "finance", "finance", "{9F35
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "basic", "finance\basic\basic.fsproj", "{6D21535C-6685-4E25-BE9D-339BE37042B3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "application", "application", "{518A4C79-DD7B-4A11-9BB8-B84721A5553C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "visualizer", "application\visualizer\visualizer.fsproj", "{3DF78476-4E24-4D73-B12D-507DD61A2021}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D21535C-6685-4E25-BE9D-339BE37042B3} = {6D21535C-6685-4E25-BE9D-339BE37042B3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +24,16 @@ Global
 		{6D21535C-6685-4E25-BE9D-339BE37042B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D21535C-6685-4E25-BE9D-339BE37042B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D21535C-6685-4E25-BE9D-339BE37042B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DF78476-4E24-4D73-B12D-507DD61A2021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF78476-4E24-4D73-B12D-507DD61A2021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF78476-4E24-4D73-B12D-507DD61A2021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF78476-4E24-4D73-B12D-507DD61A2021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6D21535C-6685-4E25-BE9D-339BE37042B3} = {9F359F63-7DEC-4C0D-B610-081A5411D2AA}
+		{3DF78476-4E24-4D73-B12D-507DD61A2021} = {518A4C79-DD7B-4A11-9BB8-B84721A5553C}
 	EndGlobalSection
 EndGlobal
